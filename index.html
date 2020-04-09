@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Take A Break!</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="timer">
+      <div class="timer__controls">
+        <div>Dashboard</div>
+        <button data-time="300" class="timer__button">5 min break</button>
+        <button data-time="900" class="timer__button">15 min break</button>
+        <button data-time="1800" class="timer__button">30 min break</button>
+        <button data-time="3600" class="timer__button">1 hour break</button>
+        <div class="seperator"></div>
+        <section id="controls">
+          <div class="input-group">
+            <label for="minutes-input">Minutes:</label>
+            <input
+              type="number"
+              placeholder="0"
+              id="minutes-input"
+              max="300"
+              min="0"
+            />
+          </div>
+          <div class="input-group">
+            <label for="seconds-input">Seconds:</label>
+            <input
+              type="number"
+              placeholder="0"
+              id="seconds-input"
+              max="59"
+              min="0"
+            />
+          </div>
+
+          <button type="button" id="start-button" class="user__button">
+            Start
+          </button>
+          <button type="button" id="stop-button" class="user__button" disabled>
+            Stop
+          </button>
+          <button type="button" id="pause-button" class="user__button" disabled>
+            Pause
+          </button>
+        </section>
+        <!--end of id=controls, user input-->
+      </div>
+      <!--end of timer__controls-->
+
+      <div class="display">
+        <h1 class="display__time-left">Go Take A Break</h1>
+        <p class="display__end-time">👈🏻 Quick Selection</p>
+        <div class="seperator"></div>
+        <h1><span id="minutes">0</span>:<span id="seconds">00</span></h1>
+      </div>
+    </div>
+
+    <script src="countdown.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
