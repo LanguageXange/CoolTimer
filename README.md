@@ -1,6 +1,6 @@
 ## View live demo at : https://languagexange.github.io/CoolTimer/
 
-learning notes:
+Reminder / Tips while coding:
 - make sure to put a string "0" when it's less than 10 seconds (e.g. display as 01:05 rather than 01:5)
 - two javascript files: countdown.js use vanilla js while script.js use jQuery
 (I'm still trying to figure out how to incorporate two files into one document and make sure all the functions work properly!)
