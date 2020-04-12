@@ -43,8 +43,7 @@ $(document).ready(function () {
         value = 0;
       }
     }
-    //jQuery
-    //h2 tag time display
+    // time display id=minutes and id = seconds
     $("#" + key).html(value || 0);
     timerObj[key] = value;
   }
@@ -78,7 +77,7 @@ $(document).ready(function () {
           soundAlarm();
           return stopTimer();
         }
-        //
+        // minutes is >0
         timerObj.seconds = 59;
         timerObj.minutes--;
       }
